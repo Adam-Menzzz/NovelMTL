@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Zenith Zombie MTL</title>
+    <link rel='stylesheet' href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+  
+    <div style="padding: 20px;">
+      <h1>Virtual World: Peerless White Emperor</h1>
+      <ul>
+        <li>992</li>
+      </ul>
+    </div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(navbarHtml => {
+          document.getElementById('navbar-placeholder').innerHTML = navbarHtml;
+        });
+    </script>
+  </body>
+</html>
