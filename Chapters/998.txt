@@ -1,46 +1,4 @@
-def create_html_with_chapter(chapter_number, chapter_content, html_filename):
-  try:
-    html_content = f'''<!DOCTYPE html>
-<html lang="en-US">
-<head>
-<title>Zenith Zombie MTL</title>
-<link rel='stylesheet' href="styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/x-icon" href="../pic.png">
-</head>
-<body>
-  <div id="navbar-placeholder"></div>
-  <div class="chapter-container">
-    <h1>Chapter {chapter_number}</h1>
-    <div class ="chapter" id="chapter">{chapter_content}</div>
-    <div class="navigation">
-      <button class="nav-button" onclick="prevChapter()">Previous Chapter</button>
-      <button class="nav-button" onclick="nextChapter()">Next Chapter</button>
-    </div>
-  </div>
-  <script type="text/javascript" src="../navbar.js"></script>
-  <script type="text/javascript" src="../spacing.js"></script>
-  <script>
-    function nextChapter() {{
-        window.location.href = `VWPWE-{chapter_number+1}.html`;
-    }}
-    function prevChapter() {{
-        window.location.href = `VWPWE-{chapter_number-1}.html`;
-    }}
-  </script>
-</body>
-</html>'''
-
-    with open(html_filename, 'w') as html_file:
-      html_file.write(html_content)
-
-    print(f'HTML file "{html_filename}" has been successfully created.')
-  except Exception as e:
-    print(f'An error occurred: {e}')
-
-if __name__ == "__main__":
-  chapter_number = 998
-  chapter_content = '''"Dear husband, there are matters I still need to attend to at the sect. Once I've finished dealing with everything, I'll proceed to the Myriad Extinction Peak for the formalities, and then we'll choose a date for our grand wedding. Of course, we also need to arrange something at Absolute Sword Sect to let our senior sisters, senior brothers, and master bless us." Su Yanxing began planning the itinerary. Old Li observed her determined expression as she spoke and realized he didn't have much room to argue. He could only nod. On the other side, Lin Liang thought to himself, Su Yanxing seems to be provoking her senior sisters intentionally. As far as I know, among her batch of Absolute Sword disciples, aside from her, only two others have found partners. Her senior sister Su Tianxing had a past with Lan'er, but Lan'er isn't someone who accepts people just because they're pleasing to his eyes, like his father. He doesn't keep people as bodyguards and warm beds. Most of his employees become his harem... Lan'er's nature is completely different from his father's. He's calm, resolute, diligent, and studious. He's cold on the outside but warm on the inside. However, there are still many similarities. He enjoys tormenting people and helping others, so he has accrued quite a few romantic debts... The sorrows of the world, its ups and downs, its loves and hatreds, separations and partings, he has seen through them all. The sword mark of the Six Desires and Seven Emotions Flower on his forehead indicates that he has attained a higher level of enlightenment. He is currently at a bottleneck, trying to undergo rebirth and attain a new level of humanity.
+"Dear husband, there are matters I still need to attend to at the sect. Once I've finished dealing with everything, I'll proceed to the Myriad Extinction Peak for the formalities, and then we'll choose a date for our grand wedding. Of course, we also need to arrange something at Absolute Sword Sect to let our senior sisters, senior brothers, and master bless us." Su Yanxing began planning the itinerary. Old Li observed her determined expression as she spoke and realized he didn't have much room to argue. He could only nod. On the other side, Lin Liang thought to himself, Su Yanxing seems to be provoking her senior sisters intentionally. As far as I know, among her batch of Absolute Sword disciples, aside from her, only two others have found partners. Her senior sister Su Tianxing had a past with Lan'er, but Lan'er isn't someone who accepts people just because they're pleasing to his eyes, like his father. He doesn't keep people as bodyguards and warm beds. Most of his employees become his harem... Lan'er's nature is completely different from his father's. He's calm, resolute, diligent, and studious. He's cold on the outside but warm on the inside. However, there are still many similarities. He enjoys tormenting people and helping others, so he has accrued quite a few romantic debts... The sorrows of the world, its ups and downs, its loves and hatreds, separations and partings, he has seen through them all. The sword mark of the Six Desires and Seven Emotions Flower on his forehead indicates that he has attained a higher level of enlightenment. He is currently at a bottleneck, trying to undergo rebirth and attain a new level of humanity.
 
 Lin Liang was very proud of Lin Lan. As for Lin Lan's true cultivation level, even he doesn't know how far he has progressed.
 
@@ -54,7 +12,7 @@ Lin Lan yawned and said to Song Yin, "Song Yin, come with me for a moment."
 
 At the Youth Martial Arts Tournament:
 
-Old Li and Old Wang began preparing late-night snacks, assisted by Panty Uncle. The fragrance made the disciples of other sects and families itch with jealousy because they couldn't taste it. Lin Liang fanned himself with a feather fan and enjoyed the aroma of the barbecue. True delicacies don't have to be extravagant; simplicity is the essence of barbecue – just roast some mushrooms and sprinkle some salt...
+Old Li and Old Wang began preparing late-night snacks, assisted by Panty Uncle. The fragrance made the disciples of other sects and families itch with jealousy because they couldn't taste it. Lin Liang fanned himself with a feather fan and enjoyed the aroma of the barbecue. True delicacies don't have to be extravagant; simplicity is the essence of barbecue - just roast some mushrooms and sprinkle some salt...
 
 Qin Yunlong advanced into the top 32, and the Flame Emperor's Li family also progressed smoothly. As for Ye Cang, he faced Ye Wushuang in the evening match. Ye Wushuang used the Black Tiger's Heart-Stealing technique against Ye Cang, who used the White Crane's Dazzling Wings technique. The two faced off on the arena.
 
@@ -122,6 +80,4 @@ Ye Cang didn't say much, watching Ye Wushuang transferring money. "You're giving
 
 Ye Cang thought to himself, because she's my disciple now. You sent her money, but I told her not to accept money from uncertain sources and to let me handle it for her, so... Thank you. "Ah, Old Xie..."
 
-"This is my debt to Old Xie, and his debt to me. He said he'd wait until I grew up, although I know it was just a joke." Ye Wushuang's words made Ye Cang stop the conversation. He patted her shoulder and went to check on the late-night snacks and lend a hand.'''
-  html_filename = f"VirtualWorldPeerlessWhiteEmperor/VWPWE-{chapter_number}.html"
-  create_html_with_chapter(chapter_number, chapter_content, html_filename)
+"This is my debt to Old Xie, and his debt to me. He said he'd wait until I grew up, although I know it was just a joke." Ye Wushuang's words made Ye Cang stop the conversation. He patted her shoulder and went to check on the late-night snacks and lend a hand.
